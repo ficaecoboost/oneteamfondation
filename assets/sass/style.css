@@ -3,7 +3,88 @@
 [Master Stylesheet]
 Theme Name:     Charius - Charity Nonprofit HTML5 Template
 Version:        1.0.0
--------------------------------------------------------------------*/
+-------------------------------------------------------------------PRVO DODATE STVARI*/
+.sidebar {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  background-color: #f99e26;
+  overflow: hidden; /* Prevent scrolling in the sidebar */
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000; /* Ensure sidebar is above other content */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centriraj sadržaj horizontalno */
+  justify-content: center; /* Centriraj sadržaj vertikalno */
+}
+
+.sidebar.open {
+  width: 100vw; /* Cover the entire viewport width */
+  height: 100vh; /* Cover the entire viewport height */
+  overflow: hidden; /* Sidebar should not scroll */
+  
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidebar-toggler {
+  position: fixed;
+  left: 15px;
+  top: 45%;
+  transform: translateY(-50%); /* Pomeri dugme na sredinu visine */
+  font-size: 45px;
+  
+  background-color: transparent;
+  border: none;
+  color: #f99e26;
+  cursor: pointer;
+  z-index: 1001; /* Osigurajte da je dugme iznad bočne trake */
+}
+@media (max-width: 900px) {
+  .sidebar-toggler{
+    left: 5px;
+    font-size: 30px;
+  }
+  .page-wrapper{
+    padding-left: 35px !important;
+  }
+
+
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Adjusted positioning */
+  font-size: 80px;
+  color: white;
+}
+
+.main-content {
+  margin-left: 0;
+  transition: margin-left 0.5s;
+  padding: 15px;
+  overflow: auto; /* Allow scrolling in the main content */
+  height: 100vh; /* Ensure the content area takes up full height */
+}
+
+.main-content.shift {
+  margin-left: 0; /* Adjust if needed */
+}
+
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -2073,6 +2154,7 @@ img {
   visibility: visible;
   right: 0;
 }
+
 
 @media (min-width: 91px) {
   .page-wrapper {
