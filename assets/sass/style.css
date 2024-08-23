@@ -99,7 +99,7 @@ Version:        1.0.0
   justify-content: flex-start; /* Stavke menija počinju od sredine */
   align-items: center;
   overflow-y: auto; /* Skrolovanje ako ima previše stavki */
-  margin-top: 70px; /* Razmak od vrha */
+  padding-top: 11%;
 }
 
 
@@ -123,27 +123,35 @@ Version:        1.0.0
     top: 40%; /* Move it to 50% from the top */
     transform: translateY(-50%); /* Adjust it back up by 50% of its own height */
     width: 100%; /* Ensure it takes the full width of its container */
+
   }
 
   .sidebar-logo {
-    top: 80%; /* Move it to 50% from the top */
-    transform: translateY(-50%); /* Adjust it back up by 50% of its own height */
+    transform: translateY(-35%) !important; /* Adjust it back up by 50% of its own height */
     width: 30%; /* Ensure it takes the full width of its container */
   }
 
   .hr1 {
-    width: 50%;
+    width: 90% !important;
   }
 
+ 
+
+  .text1 {
+    display: none;
+    
+  }
 
 }
+
+
 
 
 .close-btn {
   position: absolute;
   top: 20px;
   right: 20px; /* Adjusted positioning */
-  font-size: 80px;
+  font-size: 50px !important;
   color: white;
 }
 
@@ -11642,7 +11650,6 @@ input[type=checkbox]:checked:disabled + label:before {
 .error-404-section .error-message h3 {
   font-size: 30px;
   font-size: 2rem;
-	
   margin: 0 0 0.8em;
 }
 .error-404-section .error-message p {
