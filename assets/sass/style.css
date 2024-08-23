@@ -11642,6 +11642,7 @@ input[type=checkbox]:checked:disabled + label:before {
 .error-404-section .error-message h3 {
   font-size: 30px;
   font-size: 2rem;
+	
   margin: 0 0 0.8em;
 }
 .error-404-section .error-message p {
