@@ -135,7 +135,11 @@ Version:        1.0.0
     width: 90% !important;
   }
 
- 
+   .text {
+    display: none;
+    
+  }
+  /*PROBA ZA IKONICE I TEXT NA DUGMADIMA, MOZE BITI OBRISANO*/
 
   .text1 {
     display: none;
