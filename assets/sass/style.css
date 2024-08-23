@@ -89,6 +89,7 @@ Version:        1.0.0
 
 .sidebar-logo {
   width: 150px; /* Podešavanje veličine logotipa */
+
 }
 
 .menu-container {
@@ -119,6 +120,7 @@ Version:        1.0.0
 
   .menu-container {
     padding-left: 10%;
+    padding-top: 60% !important;
     position: absolute; /* Position the element absolutely */
     top: 40%; /* Move it to 50% from the top */
     transform: translateY(-50%); /* Adjust it back up by 50% of its own height */
@@ -129,17 +131,21 @@ Version:        1.0.0
   .sidebar-logo {
     transform: translateY(-35%) !important; /* Adjust it back up by 50% of its own height */
     width: 30%; /* Ensure it takes the full width of its container */
+    z-index: 1001 !important; 
+
+
   }
 
   .hr1 {
     width: 90% !important;
   }
 
-   .text {
+  .text {
     display: none;
     
   }
   /*PROBA ZA IKONICE I TEXT NA DUGMADIMA, MOZE BITI OBRISANO*/
+ 
 
   .text1 {
     display: none;
@@ -157,6 +163,8 @@ Version:        1.0.0
   right: 20px; /* Adjusted positioning */
   font-size: 50px !important;
   color: white;
+  z-index: 1001 !important; 
+
 }
 
 .main-content {
