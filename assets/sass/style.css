@@ -3,7 +3,163 @@
 [Master Stylesheet]
 Theme Name:     Charius - Charity Nonprofit HTML5 Template
 Version:        1.0.0
--------------------------------------------------------------------*/
+-------------------------------------------------------------------PRVO DODATE STVARI*/
+
+
+.modern-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 3px solid #f99e26; /* Thicker border with the specified color */
+  border-radius: 5px; /* Slightly rounded corners */
+  text-decoration: none; /* Removes underline from the link */
+  color: #fff; /* White text color */
+  background-color: #f99e26; /* Background color */
+  font-size: 18px; /* Larger font size */
+  font-family: 'Arial', sans-serif; /* Nicer font */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.modern-btn:hover {
+  background-color: #fff; /* Changes background color on hover */
+  color: #f99e26; /* Changes text color on hover */
+}
+
+.modern-btn .mobile i {
+  margin-right: 8px; /* Adjust the spacing between icon and text */
+}
+
+
+.sidebar-toggler {
+  position: fixed;
+  left: 15px; /* Pozicioniraj blizu leve strane */
+  top: 45%; /* Postavi na sredinu visine */
+  transform: translateY(-50%); /* Centriraj vertikalno */
+  font-size: 45px; /* Veličina simbola */
+  
+  background-color: transparent; /* Transparentna pozadina */
+  border: none; /* Bez okvira */
+  color: #f99e26; /* Boja simbola */
+  cursor: pointer; /* Pokazivač u obliku ruke */
+  z-index: 1001; /* Osiguraj da je dugme iznad sadržaja */
+}
+
+
+
+.sidebar {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  background-color: #f99e26;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Linkovi će se sada poravnati na levo */
+  justify-content: flex-start; /* Sadržaj počinje od vrha */
+  overflow-y: auto; /* Omogućeno vertikalno skrolovanje */
+}
+
+.sidebar.open {
+  width: 100vw; /* Pokrij celu širinu ekrana */
+  height: 100vh; /* Pokrij celu visinu ekrana */
+  overflow-y: auto; /* Omogući vertikalno skrolovanje */
+}
+
+.sidebar a {
+  padding: 15px 30px; /* Dodatno razmakni linkove */
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  
+    text-decoration: underline; /* Add underline on hover */
+ 
+}
+
+
+.sidebar-logo {
+  width: 150px; /* Podešavanje veličine logotipa */
+}
+
+.menu-container {
+  
+  flex-grow: 1; /* Omogućava da meni zauzme preostali prostor */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Stavke menija počinju od sredine */
+  align-items: center;
+  overflow-y: auto; /* Skrolovanje ako ima previše stavki */
+  margin-top: 70px; /* Razmak od vrha */
+}
+
+
+
+.black-text a:hover {
+  color: #fff; /* Promeni boju na hover */
+}
+
+@media (max-width: 900px) {
+  .sidebar-toggler{
+    left: 5px;
+    font-size: 30px;
+  }
+  .page-wrapper{
+    padding-left: 35px !important;
+  }
+
+  .menu-container {
+    padding-left: 10%;
+    position: absolute; /* Position the element absolutely */
+    top: 40%; /* Move it to 50% from the top */
+    transform: translateY(-50%); /* Adjust it back up by 50% of its own height */
+    width: 100%; /* Ensure it takes the full width of its container */
+  }
+
+  .sidebar-logo {
+    top: 80%; /* Move it to 50% from the top */
+    transform: translateY(-50%); /* Adjust it back up by 50% of its own height */
+    width: 30%; /* Ensure it takes the full width of its container */
+  }
+
+  .hr1 {
+    width: 50%;
+  }
+
+
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Adjusted positioning */
+  font-size: 80px;
+  color: white;
+}
+
+.main-content {
+  margin-left: 0;
+  transition: margin-left 0.5s;
+  padding: 15px;
+  overflow: auto; /* Allow scrolling in the main content */
+  height: 100vh; /* Ensure the content area takes up full height */
+}
+
+.main-content.shift {
+  margin-left: 0; /* Adjust if needed */
+}
+
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -1318,6 +1474,8 @@ img {
   margin-bottom: 0;
 }
 
+
+
 @media (min-width: 91px) {
   .topbar ul {
     float: none;
@@ -2073,6 +2231,7 @@ img {
   visibility: visible;
   right: 0;
 }
+
 
 @media (min-width: 91px) {
   .page-wrapper {
