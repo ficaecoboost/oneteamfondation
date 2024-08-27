@@ -604,17 +604,17 @@
                 },
 
                 768: {
-                    items: 2,
+                    items: 1,
                     dots: true,
                     nav: false,
                 },
 
                 1200: {
-                    items: 3
+                    items: 1
                 },
 
                 1400: {
-                    items: 3
+                    items: 1
                 },
 
             }
