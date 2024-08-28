@@ -5,6 +5,29 @@ Theme Name:     Charius - Charity Nonprofit HTML5 Template
 Version:        1.0.0
 -------------------------------------------------------------------PRVO DODATE STVARI*/
 
+.modal-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-content {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
 
 .modern-btn {
   display: inline-block;
