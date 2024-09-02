@@ -5,6 +5,36 @@ Theme Name:     Charius - Charity Nonprofit HTML5 Template
 Version:        1.0.0
 -------------------------------------------------------------------PRVO DODATE STVARI*/
 
+/* Stil za dropdown meni */
+.dropdown {
+  padding-left: 0px !important;
+}
+
+.dropdown-menu {
+  display: none; /* Prvobitno skriven */
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Prikaži kada se pređe mišem */
+}
+
+.dropdown-item {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+
 .modal-body {
   font-size: 1rem;
   line-height: 1.6;
@@ -114,11 +144,12 @@ Version:        1.0.0
 
 .sidebar-logo {
   width: 250px; /* Podešavanje veličine logotipa */
+  padding-right: 30px;
 
 }
 
 .menu-container {
-  
+  padding-left: 30px;
   flex-grow: 1; /* Omogućava da meni zauzme preostali prostor */
   display: flex;
   flex-direction: column;
