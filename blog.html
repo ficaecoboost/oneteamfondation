@@ -41,22 +41,20 @@
                     <div class="wpo-site-header wpo-site-header-s1">
                         <nav class="navigation navbar navbar-expand-lg navbar-light">
                             <div class="container-fluid ">
-                                <div class="row align-items-center " id="custom-padding">
-                                    <div class="col-md-4 col-sm-2">
-                                        <a class="navbar-brand" href="index.html"><img src="assets/images/logos/logoNav.png" alt="" style="max-height: 80px;"></a>
-    
+                                <div class="row align-items-center" id="custom-padding">
+                                    <div class="col-md-4 col-sm-8 col-9">
+                                        <a class="navbar-brand" href="index.html">
+                                            <img src="assets/images/logos/logoNav.png" alt="" style="max-height: 80px;">
+                                        </a>
                                     </div>
-                                    <div class="col-md-8 col-sm-2">
-    
-    
+                                    <div class="col-md-8 col-sm-4 col-3">
                                         <div class="header-right">
-                                            
                                             <div class="close-form">
                                                 <a class="modern-btn" href="donate.html">
                                                     <span class="mobile">
                                                         <i class="fi fa fa-phone"></i>
                                                     </span>
-                                                    <span class="text">CHILD SUPPORT</span>
+                                                    <span class="text1">CHILD HELPLINE</span>
                                                 </a>
                                             </div>
                                             <div class="close-form">
@@ -64,12 +62,13 @@
                                                     <span class="mobile">
                                                         <i class="fi fa fa-heart"></i>
                                                     </span>
-                                                    <span class="text">DONATE</span>
+                                                    <span class="text1">DONATE</span>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         </nav>
                     </div>
@@ -94,36 +93,39 @@
                     <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()"><b>X</b></a>
                 
                     <!-- Logo stavljen izvan containera -->
-                    <a href="index.html" class="linkaa"><img src="assets/images/logos/logoNav.png" alt="" class="sidebar-logo offset-md-2"></a>
+                    <a href="index.html" class="linkaa"><img src="assets/images/logos/logoNav.png" alt="" class="sidebar-logo "></a>
                 
                     <div class="menu-container">
                         <div class="container-fluid">
                             <div class="row offset-md-2 mb-5 mt-5">
+                                <a href="entertainment.html" style="padding: 0px;">ART, MUSIC, SPORT & MORE...</a>
+                                <hr class="hr1" style="width: 20%;">
+                                <a href="ourProjects.html" style="padding: 0px;">OUR PROJECTS</a>
+                                <hr class="hr1" style="width: 20%;">
+                                <a href="upcomingEvents.html" style="padding: 0px;">UPCOMING EVENTS</a>
+                                <hr class="hr1" style="width: 20%;">
                                 
-                                    <a href="ourFounder.html" style="padding: 0px;">OUR TEAM</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="ourMission.html" style="padding: 0px;">OUR MISSION</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="ourProjects.html" style="padding: 0px;">OUR PROJECTS</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="entertainment.html" style="padding: 0px;">ART, MUSIC, SPORT & MORE...</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="donate.html" style="padding: 0px;">DONATE</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="https://oneteam-shop.com/" style="padding: 0px;">SHOP</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="blog.html" style="padding: 0px;">BLOG</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="companiesSupport.html" style="padding: 0px;">PARTNER COMPANIES</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="index.html" style="padding: 0px;">UPCOMING EVENTS</a>
-                                    <hr class="hr1" style="width: 20%;">
-                                    <a href="contact.html" style="padding: 0px;">CONTACT US</a>
-                                
-                                
+                                <!-- Dropdown menu for ABOUT US -->
+                                <div class="dropdown">
+                                    <a href="#" class="dropdown-toggle" id="aboutUsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0px;">
+                                        ABOUT US
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                        <a class="dropdown-item" href="ourFounder.html">OUR TEAM</a>
+                                        <a class="dropdown-item" href="ourMission.html">OUR MISSION</a>
+                                    </div>
+                                </div>
+                    
+                                <hr class="hr1" style="width: 20%;">
+                                <a href="blog.html" style="padding: 0px;">BLOG</a>
+                                <hr class="hr1" style="width: 20%;">
+                                <a href="donate.html" style="padding: 0px;">DONATE</a>
+                                <hr class="hr1" style="width: 20%;">
+                                <a href="https://oneteam-shop.com/" style="padding: 0px;">SHOP</a>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 
         
@@ -143,20 +145,29 @@
 
     <!-- start page-wrapper -->
     <div class="page-wrapper" style="padding-left: 5%;">        <!-- start preloader -->
-        <!-- start wpo-page-title -->
-        <section class="wpo-page-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="wpo-breadcumb-wrap">
-                            <h2>Blog</h2>
-
+        
+                <!-- start of hero -->
+                <section class="static-hero container-fluid">
+                    <div class="hero-container" style="background-image: url(assets/images/home/pozadina.jpg); background-size: cover;">
+                        <div class="hero-inner" style="margin-bottom: 10px; padding-bottom: 10%;">
+                            <div class="container-fluid">
+                                <div class="hero-content">
+                                    
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>BLOG</h2>
+                                    </div>
+                                    
+                                    <div class="clearfix"></div>
+                                    
+                            
+                                
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </section>
-        <!-- end page-title -->
+                </section>
+                <!-- end of hero slider -->
 
         <!-- start wpo-blog-pg-section -->
         <section class="wpo-blog-pg-section section-padding">
