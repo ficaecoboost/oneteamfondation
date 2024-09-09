@@ -5,6 +5,14 @@ Theme Name:     Charius - Charity Nonprofit HTML5 Template
 Version:        1.0.0
 -------------------------------------------------------------------PRVO DODATE STVARI*/
 
+.hero-container {
+  background-image: url(assets/images/ourMission/ourMission.jpg);
+  background-size: cover;          /* Slika će ispuniti ceo div */
+  background-position: center;     /* Centriranje slike unutar diva */
+  background-repeat: no-repeat;    /* Sprečavanje ponavljanja slike */
+}
+
+
 /* Stil za dropdown meni */
 .dropdown {
   padding-left: 0px !important;
@@ -171,6 +179,10 @@ Version:        1.0.0
 }
 
 @media (max-width: 900px) {
+  .sidebar-jezik{
+    font-size: 32px !important;
+  }
+
   .sidebar-toggler{
     left: 5px;
     font-size: 30px;
