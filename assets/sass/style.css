@@ -5,6 +5,43 @@ Theme Name:     Charius - Charity Nonprofit HTML5 Template
 Version:        1.0.0
 -------------------------------------------------------------------PRVO DODATE STVARI*/
 
+.static-hero{
+  padding: 0px !important;
+}
+
+/* Transparentan header na vrhu stranice */
+#header {
+  
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: transparent !important; /* Potpuno transparentna pozadina */
+  z-index: 1000 !important;
+  box-shadow: none !important; /* Uklanja senku */
+}
+
+.wpo-site-header {
+  padding: 0px !important;
+  background-color: transparent !important; /* Transparentnost za celu header sekciju */
+}
+
+/* Hero slika koja se nastavlja ispod headera */
+.static-hero {
+  position: relative !important;
+  margin-top: 0 !important; /* Da se slika nastavlja odmah ispod headera */
+  height: 100vh !important; /* Puna visina za hero sekciju */
+}
+
+.hero-container {
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100% !important; /* Visina hero sekcije */
+  position: relative !important;
+}
+
+
+
 .hero-container {
   background-image: url(assets/images/ourMission/ourMission.jpg);
   background-size: cover;          /* Slika će ispuniti ceo div */
@@ -1095,6 +1132,10 @@ img {
   /*** wpo-contact-widget ***/
 }
 @media screen and (min-width: 992px) {
+
+  #header {padding-left: 60px;}
+  
+
   .blog-sidebar {
     padding-left: 45px;
   }
@@ -2439,7 +2480,7 @@ img {
 }
 @media (min-width: 91px) {
   .wpo-site-header .navigation {
-    padding: 20px 0;
+    padding: 0px 0;
   }
 }
 .wpo-site-header #navbar {
